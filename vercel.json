@@ -1,19 +1,18 @@
-<<<<<<< HEAD
 {
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/"
+      "src": "vite.config.js",
+      "use": "@vercel/static-build"
     }
-  ]
-}
-=======
-{
-  "rewrites": [
+  ],
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
-  ]
+  ],
+  "static": {
+    "trailingSlash": false
+  }
 }
->>>>>>> 0678c09e2402189eb85e96763de66277dc7f5693
